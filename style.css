@@ -24,8 +24,9 @@ div {
   
   background-color: hsl(0, 0%, 12%);
   min-width: 440px;
-  min-height: 90vh; /* طول الصفحة كلها */
-  max-height: 600px; /* حد أقصى للطول عشان الشكل مايبقاش غريب في الشاشات الكبيرة */
+  height: 600px;
+
+
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
