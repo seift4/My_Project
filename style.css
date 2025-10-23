@@ -24,7 +24,7 @@ div {
   
   background-color: hsl(0, 0%, 12%);
   min-width: 440px;
-  height: 600px;
+  height: 650px;
 
 
   text-align: center;
@@ -33,21 +33,22 @@ div {
 }
 
 img {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   position: relative;
-  bottom: 30px;
+  bottom: 10px;
   margin-top: 20px;
 }
 
 
 
 #p1 {
+  font-size: large;
   color:  palegoldenrod;
-  font-weight: 500;
+  font-weight: 800;
     position: relative;
-  bottom: 118px;
+  bottom: 90px;
 
 }
 
@@ -55,12 +56,12 @@ img {
   color: rgb(137, 143, 135);
   font-weight: 400;
   position: relative;
-  bottom: 124px;}
+  bottom: 100px;}
 #p3{
       color: rgb(137, 143, 135);
   font-weight: 400;
   position: relative;
-  bottom: 130px;
+  bottom: 100px;
 }
 input {
   border-radius: 10px;
@@ -75,7 +76,7 @@ input {
   border: none;
   transition: 0.3s;
     position: relative;
-  bottom: 140px;
+  bottom: 100px;
 }
 
 input:hover {
@@ -92,7 +93,7 @@ input:hover {
 
     animation: shadow-dance 2s infinite;
     position: relative;
-    bottom: 77px;
+    bottom: 48px;
 }
 
 @keyframes shadow-dance {
