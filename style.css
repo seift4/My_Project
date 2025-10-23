@@ -6,6 +6,8 @@ body {
   margin: 0;
   padding: 0;
 
+
+
   /* يخلي المحتوى في النص تمامًا */
   display: flex;
   justify-content: center;
@@ -17,9 +19,11 @@ body {
 }
 
 div {
-  border-radius: 20px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 100px hsl(75, 100%, 65%);
+  
   background-color: hsl(0, 0%, 12%);
-  width: 370px;
+  min-width: none;width: 370px;
   height: 100vh; /* طول الصفحة كلها */
   max-height: 600px; /* حد أقصى للطول عشان الشكل مايبقاش غريب في الشاشات الكبيرة */
   text-align: center;
@@ -59,6 +63,7 @@ img {
 }
 input {
   border-radius: 10px;
+  text-shadow: 5px 5px 8px yellowgreen , -5px -5px 8px yellowgreen ,-5px 5px 8px yellowgreen ,5px -5px 8px yellowgreen ;
   width: 80%;
   height: 45px;
   background-color: hsl(0, 0%, 20%);
