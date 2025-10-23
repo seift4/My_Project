@@ -1,79 +1,99 @@
-body{
-    
-    background-color: black;
-    position: absolute;
-    right: 50%;
-    
+/* استيراد الخط يكون في أول الملف */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+
+  /* يخلي المحتوى في النص تمامًا */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* يخلي الصفحة بطول الشاشة */
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
 }
-div{
-    border-radius: 20px;
-    background-color:  hsl(0, 0%, 12%);
-    width: 370px;
-    height: 550px ;
 
+div {
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 12%);
+  width: 370px;
+  height: 100vh; /* طول الصفحة كلها */
+  max-height: 600px; /* حد أقصى للطول عشان الشكل مايبقاش غريب في الشاشات الكبيرة */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 30px;
+  margin-top: 20px;
+}
+
+
+
+#p1 {
+  color: hsl(75, 94%, 57%);
+  font-weight: 500;
     position: relative;
-    top: 100px;
-    left: 150px;
-    text-align: center;
-    
+  bottom: 118px;
 
 }
-img{
-   height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    position:relative;
-    top: 17px;
-}
 
-h1{
-   color:  hsl(0, 0%, 100%);
-   @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+#p2 {
+  color: rgb(137, 143, 135);
+  font-weight: 400;
+  position: relative;
+  bottom: 124px;}
+#p3{
+      color: rgb(137, 143, 135);
+  font-weight: 400;
+  position: relative;
+  bottom: 130px;
 }
-
-#p1{
-    color:hsl(75, 94%, 57%);
-
-   @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
-#p2{
-    color:rgb(137, 143, 135);
-       @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
-input{
-   @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+input {
   border-radius: 10px;
-    width: 300px;
-    height: 40px;
-    background-color:hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 100%);
-    vertical-align: middle;
-    font-weight: 700;
-    text-align: center;   
-    margin: 5px;
-    border: 0;
+  width: 80%;
+  height: 45px;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  text-align: center;
+  margin: 8px 0;
+  border: none;
+  transition: 0.3s;
+    position: relative;
+  bottom: 140px;
 }
-input:hover{
-    background-color: hsl(75, 94%, 57%);
-    font-weight: 700;
 
-    color: black;
-    cursor: grab;
+input:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+  cursor: pointer;
+}
+
+
+.shadow-dance-text {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 5px 5px 0  hsl(75, 94%, 57%), 10px 10px 0 #000000;
+
+    animation: shadow-dance 2s infinite;
+    position: relative;
+    bottom: 77px;
+}
+
+@keyframes shadow-dance {
+    0%, 100% {
+        text-shadow: 5px 5px 0  hsl(75, 94%, 57%), 10px 10px 0 #000000;
+    }
+    50% {
+        text-shadow: -5px -5px 0 #000000, -10px -10px 0  hsl(75, 94%, 57%);
+    }
 }
