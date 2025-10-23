@@ -20,11 +20,11 @@ body {
 
 div {
   border-radius: 25px;
-  box-shadow: 10px 10px 100px hsl(75, 100%, 65%);
+  box-shadow: 10px 10px 100px palegoldenrod;
   
   background-color: hsl(0, 0%, 12%);
-  min-width: none;width: 370px;
-  height: 100vh; /* طول الصفحة كلها */
+  min-width: 440px;
+  min-height: 90vh; /* طول الصفحة كلها */
   max-height: 600px; /* حد أقصى للطول عشان الشكل مايبقاش غريب في الشاشات الكبيرة */
   text-align: center;
   padding: 20px;
@@ -43,7 +43,7 @@ img {
 
 
 #p1 {
-  color: hsl(75, 94%, 57%);
+  color:  palegoldenrod;
   font-weight: 500;
     position: relative;
   bottom: 118px;
@@ -63,11 +63,11 @@ img {
 }
 input {
   border-radius: 10px;
-  text-shadow: 5px 5px 8px yellowgreen , -5px -5px 8px yellowgreen ,-5px 5px 8px yellowgreen ,5px -5px 8px yellowgreen ;
+  text-shadow: 5px 5px 8px palegoldenrod, -5px -5px 8px palegoldenrod ,-5px 5px 8px  palegoldenrod ,5px -5px 8px  palegoldenrod;
   width: 80%;
   height: 45px;
-  background-color: hsl(0, 0%, 20%);
-  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 2%, 20%);
+  color: hsl(0, 0%, 0%);
   font-weight: 700;
   text-align: center;
   margin: 8px 0;
@@ -78,7 +78,7 @@ input {
 }
 
 input:hover {
-  background-color: hsl(75, 94%, 57%);
+  background-color:  palegoldenrod;
   color: black;
   cursor: pointer;
 }
@@ -87,7 +87,7 @@ input:hover {
 .shadow-dance-text {
     font-size: 4rem;
     color: #fff;
-    text-shadow: 5px 5px 0  hsl(75, 94%, 57%), 10px 10px 0 #000000;
+    text-shadow: 5px 5px 0   palegoldenrod 10px 10px 0 #000000;
 
     animation: shadow-dance 2s infinite;
     position: relative;
@@ -96,9 +96,9 @@ input:hover {
 
 @keyframes shadow-dance {
     0%, 100% {
-        text-shadow: 5px 5px 0  hsl(75, 94%, 57%), 10px 10px 0 #000000;
+        text-shadow: 5px 5px 0   palegoldenrod, 10px 10px 0 #000000;
     }
     50% {
-        text-shadow: -5px -5px 0 #000000, -10px -10px 0  hsl(75, 94%, 57%);
+        text-shadow: -5px -5px 0 #000000, -10px -10px 0  palegoldenrod;
     }
 }
