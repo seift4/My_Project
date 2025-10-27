@@ -1,12 +1,10 @@
 /* استيراد الخط يكون في أول الملف */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 body {
   background-color: black;
   margin: 0;
   padding: 0;
-
-
 
   /* يخلي المحتوى في النص تمامًا */
   display: flex;
@@ -21,11 +19,10 @@ body {
 div {
   border-radius: 25px;
   box-shadow: 10px 10px 100px palegoldenrod;
-  
-  background-color: hsl(0, 0%, 12%);
-  min-width: 440px;
-  height: 650px;
 
+  background-color: hsl(0, 0%, 12%);
+  width: 400px;
+  height: 680px;
 
   text-align: center;
   padding: 20px;
@@ -41,31 +38,30 @@ img {
   margin-top: 20px;
 }
 
-
-
 #p1 {
   font-size: large;
-  color:  palegoldenrod;
+  color: palegoldenrod;
   font-weight: 800;
-    position: relative;
+  position: relative;
   bottom: 90px;
-
 }
 
 #p2 {
   color: rgb(137, 143, 135);
   font-weight: 400;
   position: relative;
-  bottom: 100px;}
-#p3{
-      color: rgb(137, 143, 135);
+  bottom: 100px;
+}
+#p3 {
+  color: rgb(137, 143, 135);
   font-weight: 400;
   position: relative;
   bottom: 100px;
 }
 input {
   border-radius: 10px;
-  text-shadow: 5px 5px 8px palegoldenrod, -5px -5px 8px palegoldenrod ,-5px 5px 8px  palegoldenrod ,5px -5px 8px  palegoldenrod;
+  text-shadow: 5px 5px 8px palegoldenrod, -5px -5px 8px palegoldenrod,
+    -5px 5px 8px palegoldenrod, 5px -5px 8px palegoldenrod;
   width: 80%;
   height: 45px;
   background-color: hsl(0, 2%, 20%);
@@ -75,32 +71,32 @@ input {
   margin: 8px 0;
   border: none;
   transition: 0.3s;
-    position: relative;
+  position: relative;
   bottom: 100px;
 }
 
 input:hover {
-  background-color:  palegoldenrod;
+  background-color: palegoldenrod;
   color: black;
   cursor: pointer;
 }
 
-
 .shadow-dance-text {
-    font-size: 4rem;
-    color: #fff;
-    text-shadow: 5px 5px 0   palegoldenrod 10px 10px 0 #000000;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 5px 5px 0 palegoldenrod 10px 10px 0 #000000;
 
-    animation: shadow-dance 2s infinite;
-    position: relative;
-    bottom: 48px;
+  animation: shadow-dance 2s infinite;
+  position: relative;
+  bottom: 48px;
 }
 
 @keyframes shadow-dance {
-    0%, 100% {
-        text-shadow: 5px 5px 0   palegoldenrod, 10px 10px 0 #000000;
-    }
-    50% {
-        text-shadow: -5px -5px 0 #000000, -10px -10px 0  palegoldenrod;
-    }
+  0%,
+  100% {
+    text-shadow: 5px 5px 0 palegoldenrod, 10px 10px 0 #000000;
+  }
+  50% {
+    text-shadow: -5px -5px 0 #000000, -10px -10px 0 palegoldenrod;
+  }
 }
